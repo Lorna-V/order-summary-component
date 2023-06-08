@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  /* General Styles */
+
+    html { 
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px;
+      background-color: hsl(225, 100%, 94%);
+    }
+
+    body {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image {
+      background: url('images/illustration-hero.svg') lightblue;
+      background-size: cover;
+      background-position: center;
+      width: 375px;
+      height: 200px;
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+    }
+
+    .content-wrapper {
+      background-color: white;
+      border-bottom-left-radius: 5%;
+      border-bottom-right-radius: 5%;
+      width: 375px;
+      height: 425px;
+    }
+
+    a:hover {
+      color: black;
+    }
+
+  /* Mobile Styles */  
+
+  @media only screen and (min-width: 0px) {
+
+    .hero-image,
+    .content-wrapper {
+      max-width: 375px;
+    }
+    
+    h1 {
+      color: hsl(223, 47%, 23%);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 0;
+      padding-top: 30px;
+    }
+    
+    p {
+      color: hsl(224, 23%, 55%);
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 2rem;
+    }
+
+    .plan {
+      background-color:hsl(225, 100%, 98%);
+      border-radius: 10px;
+      margin: 0 20px;
+      height: 80px;
+      display:flex;
+    }
+
+    .plan img {
+      margin: 20px;
+    }
+
+    .plan p {
+      line-height: 1.5rem;
+      width: 40%; 
+    }
+
+    .plan p span {
+      color: hsl(223, 47%, 23%);
+      font-weight: 700;
+    }
+
+    .plan p a {
+      font-size: .75rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: right;
+      padding: 10px 35px 0 0;
+    }
+
+    .plan p a:hover {
+      text-decoration: none;
+      color: rgb(102, 84, 165);
+    }
+    
+    .proceed {
+      background-color: hsl(245, 75%, 52%);
+      border-radius: 10px;
+      margin: 20px 20px;
+    } 
+
+    .proceed h2 {
+      color: hsl(225, 100%, 98%);
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .proceed h2 a {
+      text-decoration: none;
+      background-color: transparent;
+      color: inherit;
+    }
+
+    .proceed:hover {
+      background-color: rgb(102, 84, 165);
+    }
+
+    .cancel {
+      margin: 0;
+    }
+
+    .cancel h2 {
+      color: hsl(224, 23%, 55%);
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .cancel h2 a {
+      text-decoration: none;
+      background-color: transparent;
+      color: inherit;
+    }
+
+    .cancel h2 a:hover {
+      color: hsl(223, 47%, 23%);
+    }
+
+    .attribution {
+      max-width: 375px;
+    }
+
+    .attribution p { 
+      font-size: .75rem; 
+      line-height: 1rem;
+      text-align: center; 
+    }
+    
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+
+    }
+
+  /* Desktop Styles */
+    @media only screen and (min-width: 1200px) {
+
+    html {
+      background: url('images/pattern-background-desktop.svg') no-repeat;
+    }
+
+    main {
+      max-width: 1440px;
+    }
+
+    .hero-image {
+      align-content: center;
+    }
+
+    .content-wrapper { 
+      
+    }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+
+    <div class="hero-image"></div>
+
+    <div class="order">
+      <div class="content-wrapper">
+        <h1>Order Summary</h1>
+        <p>You can now listen to millions of <br> 
+          songs, audiobooks, and podcasts on <br> 
+          any device anywhere you like!</p>
+        <div class="plan">
+          <img src="images/icon-music.svg" alt="music note icon">
+          <p><span>Annual Plan</span><br>
+          $59.99/year</p>
+          <p><a href="https://github.com/Lorna-V">Change</a></p>
+        </div>
+        <div class="proceed"> 
+          <h2><a href="https://github.com/Lorna-V">Proceed to Payment</a></h2>
+        </div>
+        <div class="cancel">
+          <h2><a href="https://github.com/Lorna-V">Cancel Order</a></h2>
+        </div>
+      </div>
+   </div>
+
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br> 
+    Coded by <a href="https://github.com/Lorna-V" target="_blank">Lorna-V</a>.</p>
+  </div>
+
+  </main>
+
+</body>
+
+</html>
